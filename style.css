@@ -11,8 +11,8 @@ body::before{content:"";position:fixed;left:20px;top:52px;bottom:0;width:1px;bac
 /* loader */
 #loader{position:fixed;inset:0;z-index:100;background:#000;display:flex;align-items:center;justify-content:center;transition:opacity .8s,visibility .8s}
 #loader.done{opacity:0;visibility:hidden}
-#loader h1{font:700 clamp(1.4rem,3.6vw,2.6rem)/1.3 'JetBrains Mono',monospace;text-align:center;padding:0 20px}
-#scr{color:#aaa;display:inline-block;min-width:11ch;text-align:left}
+#loader h1{font:700 clamp(1.1rem,3.6vw,2.6rem)/1.3 'JetBrains Mono',monospace;text-align:center;padding:0 20px}
+#scr{color:#fff;display:inline-block;min-width:24ch;text-align:left}
 #loader p{position:absolute;bottom:40px;color:#999;font-size:.95rem;font-weight:600}
 
 /* cursor */
@@ -38,7 +38,7 @@ body::before{content:"";position:fixed;left:20px;top:52px;bottom:0;width:1px;bac
 
 /* github tablet */
 .gh{padding:100px 20px;perspective:1200px;display:flex;justify-content:center}
-.tablet{display:block;width:min(760px,86vw);transition:transform .15s}
+.tablet{display:block;width:min(920px,92vw);transition:transform .15s}
 .frame{position:relative;background:#222;border:10px solid #3a3a3a;border-radius:32px;overflow:hidden;aspect-ratio:16/9;box-shadow:0 30px 80px rgba(122,60,240,.2)}
 .shot{display:block;width:100%;height:100%;object-fit:cover;object-position:top;filter:blur(4px) brightness(.55);transition:filter .4s}
 .tablet:hover .shot{filter:blur(1px) brightness(.45)}

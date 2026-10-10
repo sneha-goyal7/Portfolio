@@ -1,6 +1,6 @@
 /* ===== EDIT ME ===== */
 const CONFIG = {
-  loaderMs: 3000, // how long the jumbled "Brewing some cool things" screen stays (ms)
+  loaderMs: 2000, // how long the jumbled "Brewing some cool things" screen stays (ms)
   leetcode: {     // live stats are fetched automatically; these show only if the fetch fails
     user: 'sneha_goyal7',
     rank: null, solved: '300+', easy: null, medium: null, hard: null,
@@ -14,10 +14,10 @@ const $$ = s => [...document.querySelectorAll(s)];
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const fine = matchMedia('(pointer: fine)').matches;
 
-/* 1. Loader: letters stay jumbled, then settle left to right */
+/* 1. Loader: poori line jumble hoti hai, phir left to right settle hoti hai */
 (function () {
-  const el = $('#scr'), final = 'cool things';
-  const pool = final.replace(' ', '');
+  const el = $('#scr'), final = 'Brewing some cool things';
+  const pool = final.replace(/ /g, '');
   const ms = reduce ? 500 : CONFIG.loaderMs, t0 = performance.now();
   const rnd = () => {
     const c = pool[Math.random() * pool.length | 0];
@@ -27,13 +27,13 @@ const fine = matchMedia('(pointer: fine)').matches;
     const p = Math.min((performance.now() - t0) / ms, 1);
     const fixed = Math.floor(Math.max(0, p - .35) / .65 * final.length);
     el.textContent = [...final].map((c, i) => (c === ' ' || i < fixed) ? c : rnd()).join('');
-    if (p < 1) setTimeout(tick, 90);
+    if (p < 1) setTimeout(tick, 70);
     else {
       el.textContent = final;
       setTimeout(() => {
         $('#loader').classList.add('done');
         document.body.classList.remove('loading');
-      }, 400);
+      }, 300);
     }
   })();
 })();
