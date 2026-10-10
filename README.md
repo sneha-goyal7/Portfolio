@@ -9,12 +9,16 @@
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white" />
 </p>
 
-<!-- Add your live link here, for example:
-<p align="center"><a href="https://your-site.vercel.app"><b>View Live Site</b></a></p>
--->
+<p align="center">
+  <a href="https://sneha-goyal-portfolio.netlify.app/">
+    <img src="https://img.shields.io/badge/Live_Demo-Visit_Site-8b5cf6?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo" />
+  </a>
+</p>
+
+<p align="center"><a href="https://sneha-goyal-portfolio.netlify.app/"><b>🌐 View Live Demo</b></a></p>
 
 ---
 
@@ -57,6 +61,8 @@ portfolio/
 ---
 
 ## 💻 Run Locally
+
+Want to see it first? Visit the [live demo](https://sneha-goyal-portfolio.netlify.app/).
 
 No installation needed.
 
